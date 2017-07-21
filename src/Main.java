@@ -9,6 +9,8 @@ public class Main {
         AlgorithmFabric factory = new AlgorithmFabric();
         AbstractAlgorithm algorithm = factory
                 .getAlgoritm(algorithmName);
+
+        System.out.println("Wykonujemy algorytm: " +algorithm.getName());
         algorithm.runAlgoritm(args);
 
     }
