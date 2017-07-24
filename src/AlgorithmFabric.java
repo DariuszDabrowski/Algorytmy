@@ -1,6 +1,4 @@
-import Algorithm.AbstractAlgorithm;
-import Algorithm.BiednyCamelCase;
-import Algorithm.Test;
+import Algorithm.*;
 
 public class AlgorithmFabric {
 
@@ -11,6 +9,12 @@ public class AlgorithmFabric {
                 return new Test();
             case "biednycamelcase":
                 return new BiednyCamelCase();
+            case "sumujemyliczbynaturalne":
+                return new SumaLiczbNaturalnych();
+            case "sumaliczb":
+                return new SumaLiczb();
+            case "wydanenominaly":
+                return new WydaneNominaly();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
