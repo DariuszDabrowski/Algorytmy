@@ -15,6 +15,8 @@ public class AlgorithmFabric {
                 return new SumaLiczb();
             case "wydanenominaly":
                 return new WydaneNominaly();
+            case "rokprzestepny":
+                return new RokPrzestepny();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
