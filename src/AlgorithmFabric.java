@@ -17,6 +17,14 @@ public class AlgorithmFabric {
                 return new WydaneNominaly();
             case "rokprzestepny":
                 return new RokPrzestepny();
+            case "silnia":
+                return new Silnia();
+            case "sumaliczbrekurencja":
+                return new SumaLiczbRekurencja();
+            case "wyznaczaniecyfr":
+                return new WyznaczanieCyfr();
+            case "fibonacci":
+                return new Fibonacci();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
