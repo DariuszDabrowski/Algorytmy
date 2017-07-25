@@ -25,6 +25,8 @@ public class AlgorithmFabric {
                 return new WyznaczanieCyfr();
             case "fibonacci":
                 return new Fibonacci();
+            case "szyfrcezara":
+                return new SzyfrCezara();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
