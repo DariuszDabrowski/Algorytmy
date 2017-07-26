@@ -29,6 +29,8 @@ public class AlgorithmFabric {
                 return new SzyfrCezara();
             case "sortowaniebabelkowe":
                 return new SortowanieBabelkowe();
+            case "sortowaniepunktow":
+                return new SortowaniePunktow();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
