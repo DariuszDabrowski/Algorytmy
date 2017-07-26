@@ -27,6 +27,8 @@ public class AlgorithmFabric {
                 return new Fibonacci();
             case "szyfrcezara":
                 return new SzyfrCezara();
+            case "sortowaniebabelkowe":
+                return new SortowanieBabelkowe();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
