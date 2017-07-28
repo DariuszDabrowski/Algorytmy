@@ -35,6 +35,16 @@ public class AlgorithmFabric {
                 return new SortowaniePrzezZliczanie();
             case "krzyzowka":
                 return new Krzyzowka();
+            case "obzartuchy":
+                return new Obzartuchy();
+            case "najwiekszywspolnydzielnik":
+                return new NajwiekszyWspolnyDzielnik();
+            case "warcaby":
+                return new Warcaby();
+            case "dominanta":
+                return new Dominanta();
+            case "punkty":
+                return new Punkty();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
