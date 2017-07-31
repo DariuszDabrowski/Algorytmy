@@ -45,6 +45,14 @@ public class AlgorithmFabric {
                 return new Dominanta();
             case "punkty":
                 return new Punkty();
+            case "wielkanoc":
+                return new Wielkanoc();
+            case "tablice":
+                return new Tablice();
+            case "wyszukanieminmax":
+                return new WyszukanieMinMax();
+            case "lider":
+                return new Lider();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }

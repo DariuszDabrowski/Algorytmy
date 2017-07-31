@@ -15,28 +15,21 @@ public class Punkty extends AbstractAlgorithm{
         int kubaPkt = 0;
         int zenekPkt = 0;
         int bogdanPkt = 0;
+        int maxPkt = 0;
 
         char[] kuba = odpKuby.toCharArray();
         char[] zenek = odpZenka.toCharArray();
         char[] bogdan = odpBogdana.toCharArray();
 
         for (int i = 0; i < kuba.length; i++) {
-            for (int j = 0; j < zenek.length; j++) {
-                if(zenek[j] != kuba[j]){
-                    zenekPkt++;
-                }
+            if(zenek[i] != kuba[i]){
+                zenekPkt++;
+            }
+            if(bogdan[i] != kuba[i]) {
+                bogdanPkt++;
             }
         }
-
-        for (int i = 0; i < kuba.length; i++) {
-            for (int j = 0; j < bogdan.length; j++) {
-                if(bogdan[j] != kuba[j]){
-                    bogdanPkt++;
-                }
-            }
-        }
-        int maxPkt = zenekPkt + bogdanPkt;
+        maxPkt = zenekPkt + bogdanPkt;
         System.out.println("Max punktow: " + maxPkt);
-
     }
 }
