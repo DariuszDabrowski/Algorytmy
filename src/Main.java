@@ -6,7 +6,7 @@ public class Main {
 
         String algorithmName = args[0];
 
-        AlgorithmFabric factory = new AlgorithmFabric();
+        AlgorithmFactory factory = new AlgorithmFactory();
         AbstractAlgorithm algorithm = factory
                 .getAlgoritm(algorithmName);
 

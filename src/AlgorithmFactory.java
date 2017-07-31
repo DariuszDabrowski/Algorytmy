@@ -1,6 +1,6 @@
 import Algorithm.*;
 
-public class AlgorithmFabric {
+public class AlgorithmFactory {
 
     public AbstractAlgorithm getAlgoritm(String name) throws Exception {
 
@@ -17,6 +17,12 @@ public class AlgorithmFabric {
                 return new WydaneNominaly();
             case "rokprzestepny":
                 return new RokPrzestepny();
+            case "spacjecamelcase":
+                return new SpacjeCamelCase();
+            case "punkty":
+                return new Punkty();
+            case "dayinyear":
+                return  new DayInYear();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
