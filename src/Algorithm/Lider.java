@@ -18,11 +18,20 @@ public class Lider extends AbstractAlgorithm {
             }
         }
         int[] count = new int[max + 1];
-        for (int i = 0; i < count.length; i++) {
-            if(tab[i] == count[i])
-            {
-                count[i]++;
+        for (int i = 0; i < tab.length; i++) {
+           int liczba = tab[i];
+            count[liczba]++;
+        }
+        int maxWystapien = 0;
+        for (int index = 0; index < count.length; index++) {
+            if (count[index] > maxWystapien){
+                maxWystapien = count[index];
             }
+        }
+        if (maxWystapien > tab.length/2){
+            System.out.println(count[tab[maxWystapien]]);
+        } else {
+            System.out.println(-1);
         }
 
     }
