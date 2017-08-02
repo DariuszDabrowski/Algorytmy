@@ -24,12 +24,12 @@ public class Lider extends AbstractAlgorithm {
         }
         int maxWystapien = 0;
         for (int index = 0; index < count.length; index++) {
-            if (count[index] > maxWystapien){
+            if (count[maxWystapien] > tab[maxWystapien]){
                 maxWystapien = count[index];
             }
         }
         if (maxWystapien > tab.length/2){
-            System.out.println(count[tab[maxWystapien]]);
+            System.out.println(count[maxWystapien]);
         } else {
             System.out.println(-1);
         }

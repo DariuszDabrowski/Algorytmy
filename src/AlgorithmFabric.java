@@ -57,6 +57,10 @@ public class AlgorithmFabric {
                 return new TestowanieListy();
             case "listy":
                 return new Listy();
+            case "tree":
+                return new Tree();
+            case "kopiec":
+                return new Kopiec();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
