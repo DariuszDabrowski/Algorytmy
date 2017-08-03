@@ -1,6 +1,6 @@
 import Algorithm.*;
 
-public class AlgorithmFabric {
+public class AlgorithmFactory {
 
     public AbstractAlgorithm getAlgoritm(String name) throws Exception {
 
@@ -59,8 +59,14 @@ public class AlgorithmFabric {
                 return new Listy();
             case "tree":
                 return new Tree();
-            case "kopiec":
-                return new Kopiec();
+//            case "kopiec":
+//                return new Kopiec();
+            case "testkopiec":
+                return new TestKopiec();
+            case "przeliczaniesystemowliczbowych":
+                return new PrzeliczanieSystemowLiczbowych();
+            case "onp":
+                return new ONP();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
