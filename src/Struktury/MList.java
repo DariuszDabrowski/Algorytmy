@@ -1,8 +1,6 @@
 package Struktury;
 
-/**
- * Created by RENT on 2017-08-01.
- */
+
 public class MList {
     Element _head;
     Element _tail;

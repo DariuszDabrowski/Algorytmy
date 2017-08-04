@@ -42,7 +42,7 @@ public class ONP extends AbstractAlgorithm {
                 case "I":
                     v1 = st.pop();
                     v2 = st.pop();
-                    
+
                         e = v1 / v2;
                         st.push(e);
 

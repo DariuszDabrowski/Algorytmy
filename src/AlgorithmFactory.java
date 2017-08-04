@@ -67,6 +67,12 @@ public class AlgorithmFactory {
                 return new PrzeliczanieSystemowLiczbowych();
             case "onp":
                 return new ONP();
+            case "duplikat":
+                return new Duplikat();
+            case "todelete":
+                return new ToDelete();
+            case "testonewaylist":
+                return new TestOneWayList();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
