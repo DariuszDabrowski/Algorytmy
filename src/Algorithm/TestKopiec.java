@@ -18,6 +18,8 @@ public class TestKopiec extends AbstractAlgorithm{
             int newElement = Integer.parseInt(input[i]);
             kopiec.insertElement(newElement);
         }
+
+        kopiec.removeElement();
         kopiec.printHeap();
     }
 }

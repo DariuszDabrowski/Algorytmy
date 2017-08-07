@@ -118,4 +118,24 @@ public class MList {
             list.counter++;
         }
     }
+
+    public void removeElement(int elementToRemove, MList list) {
+        Element p = getElementBack(elementToRemove, list);
+        counter--;
+        if(p.prev == null){
+            _head = p.next;
+        } else {
+            Element prevToDel = new Element();
+            prevToDel = p.prev;
+            prevToDel.next = p.next;
+        }
+        if(p.next == null) {
+            _tail = p.prev;
+        } else {
+            Element nextToDel = new Element();
+            nextToDel = p.next;
+            nextToDel.prev = p.prev;
+        }
+        p = null;
+    }
 }
