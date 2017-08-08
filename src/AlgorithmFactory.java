@@ -73,6 +73,8 @@ public class AlgorithmFactory {
                 return new ToDelete();
             case "testonewaylist":
                 return new TestOneWayList();
+            case "notacja2":
+                return new Notacja2();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
