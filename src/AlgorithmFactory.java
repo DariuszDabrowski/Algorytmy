@@ -75,6 +75,8 @@ public class AlgorithmFactory {
                 return new TestOneWayList();
             case "notacja2":
                 return new Notacja2();
+            case "nww":
+                return new NWW();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
