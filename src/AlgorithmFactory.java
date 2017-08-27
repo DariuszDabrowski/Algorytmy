@@ -23,6 +23,8 @@ public class AlgorithmFactory {
                 return new Punkty();
             case "dayinyear":
                 return  new DayInYear();
+            case "lider":
+                return new Lider();
             default:
                 throw new Exception(("Nie ma takiego algorytmu!"));
         }
