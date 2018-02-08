@@ -8,7 +8,7 @@ public class AlgorithmFactory {
             case"test":
                 return new Test();
             case "biednycamelcase":
-                return new BiednyCamelCase();
+                return new PoorCamelCase();
             case "sumujemyliczbynaturalne":
                 return new SumaLiczbNaturalnych();
             case "sumaliczb":

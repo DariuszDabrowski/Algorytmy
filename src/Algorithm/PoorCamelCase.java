@@ -1,7 +1,7 @@
 package Algorithm;
 
 
-public class BiednyCamelCase extends AbstractAlgorithm{
+public class PoorCamelCase extends AbstractAlgorithm{
 
     @Override
     public String getName() {
@@ -10,20 +10,20 @@ public class BiednyCamelCase extends AbstractAlgorithm{
 
     @Override
     public void runAlgoritm(String[] input) {
-      int literki = 0;
-        String wyraz;
+      int letter = 0;
+        String word;
 
         for (int i = 1; i < input.length; i++) {
-            wyraz = input[i];
-            char[] tab = wyraz.toCharArray();
+            word = input[i];
+            char[] tab = word.toCharArray();
             for (int j = 0; j<tab.length; j++) {
                 Character c = tab[j];
-                if (literki %2 == 0) {
+                if (letter %2 == 0) {
                     System.out.print(c.toString().toUpperCase());
                 } else {
                     System.out.print(c.toString().toLowerCase());
                 }
-                literki++;
+                letter++;
 
             }
             System.out.print(" ");
